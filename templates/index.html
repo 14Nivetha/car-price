@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+        <title>CAR PRICE PREDICTION</title>
+    
+    
+</head>
+<body>
+    <form action="/predict" method="post">
+    <h1>CAR PRICE PREDICTION</h1><hr>
+    <br>
+    <br>
+    <b>MILEAGE:<input type="number" name=" mileage" placeholder="Enter your mileage :" ><br></b>
+    <br>
+    <b>YEAR   :<input type="number" name="year" placeholder="Enter your  year :" ><br></b>
+    <br>
+    <b>MODEL  :<input type="number" name="model" placeholder="Enter your model :" ><br></b>
+    <br>
+
+    <input type="submit" value="predict" class="submit">
+        </form>
+        <br>
+      <b>PRICE of the car: {{pred}}</b> 
+    </div>
+    <style>
+        body
+            {
+                text-align: center;
+                color: rgb(0, 9, 10);
+                background-repeat: no-repeat;
+                background-image: url('../static/car.jpg');
+                background-size: cover;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+                   
+    </style>
+</body>
+</html>
+    
+
+
