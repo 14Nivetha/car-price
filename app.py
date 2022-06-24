@@ -6,7 +6,7 @@ import pickle
 
 #creating constructor
 app=Flask(__name__, template_folder='templates')
-model1=pickle.load(open('model/model.pkl', 'rb'))
+model1=pickle.load(open('model.pkl', 'rb'))
 # print(model)
 
 @app.route('/')
